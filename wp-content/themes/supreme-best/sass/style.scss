@@ -1,0 +1,37 @@
+@import 'partials/mixins';
+@import 'partials/variables';
+
+html {
+    // viewport width font sizes for REMs
+    font-size:1vw;
+
+    @media (min-width:(1600px)) { font-size:16px; }
+
+    @media(max-width: $mobile){
+        font-size:9px;
+    }
+}//html
+
+body {
+    font-size:16px;
+}
+
+em{ font-style: italic; }
+
+img{
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
+
+h1{
+    font-size: em(32);
+    color: red;
+    display:flex;
+}
+
+:fullscreen a {
+  display: flex;
+}
+
+:fullscreen a { transition: transform 1s; }
